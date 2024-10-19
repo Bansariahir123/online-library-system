@@ -1,0 +1,224 @@
+/* Global styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+.header {
+  text-align: center; /* Center align the heading */
+  background-color: #333; /* Match navbar background */
+  padding: 30px 0; /* Padding for top and bottom */
+}
+
+.website-name {
+  color: white; /* Text color for the website name */
+  margin: 0; /* Remove default margin */
+  font-size: 34px; /* Font size for website name */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #998888;
+  padding: 20px; /* Adjust padding for less space */
+  display: flex;
+  justify-content: center; /* Center the links */
+  gap: 30px; /* Space between the links */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #f0a500; /* Hover color */
+}
+
+/* General container for sections */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Book Categories styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+ul li a {
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  background-color: #f5c235;
+}
+
+/* Book cards container */
+.book-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+/* Individual Book card styling */
+.book-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px;
+  
+  text-align: center;
+}
+
+.book-card img {
+  width: 150px; /* Adjusted for center alignment */
+  height: 200px; /* Adjusted for center alignment */
+  object-fit: cover;
+  display: block; /* Added for centering */
+  margin: 0 auto 10px auto; /* Centering image with auto margins */
+}
+
+.book-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.book-card a {
+  text-decoration: none;
+  color: #f4f8fc;
+  display: inline-block; /* Ensures proper spacing */
+  margin-top: 10px; /* Spacing above link */
+  padding: 5px 10px; /* Padding for better appearance */
+  background-color: #0066cc; /* Similar to book category style */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.book-card a:hover {
+  text-decoration: underline;
+  background-color: #f5c235; /* Slightly darker on hover */
+}
+
+/* Add Book Form Styling */
+.add-book-container {
+  max-width: 600px; /* Maximum width for the form */
+  margin: 20px auto; /* Center the form */
+  padding: 20px;
+  background-color: white; /* Background color for the form */
+  border: 1px solid #ddd; /* Border for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.add-book-container h1 {
+  text-align: center; /* Center align heading */
+  font-size: 24px; /* Font size for heading */
+  color: #333; /* Heading color */
+}
+
+.add-book-container input,
+.add-book-container textarea,
+.add-book-container select {
+  width: 95%; /* Full width for input fields */
+  padding: 10px; /* Padding for input fields */
+  margin: 10px 0; /* Margin for spacing */
+  border: 1px solid #ddd; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+  font-size: 16px; /* Font size for input fields */
+}
+
+.add-book-container button {
+  background-color: #0066cc; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  padding: 10px; /* Padding for button */
+  font-size: 18px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: block; /* Center the button */
+  margin: 20px auto; /* Center the button */
+}
+
+.add-book-container button:hover {
+  background-color: #f5c235; /* Darker on hover */
+}
+
+/* Search Bar Styling */
+.search-bar {
+  width: 95%; /* Full width for search bar */
+  padding: 15px; /* Padding for search bar */
+  margin: 10px 0; /* Margin for spacing */
+  border: 1px solid #ddd; /* Border for search bar */
+  border-radius: 4px; /* Rounded corners for search bar */
+  font-size: 16px; /* Font size for text */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Search Bar Focus State */
+.search-bar:focus {
+  outline: none; /* Remove outline */
+  border-color: #0066cc; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5); /* Add shadow effect on focus */
+}
+
+/* Book Details Container */
+.book-details-container {
+  max-width: 800px; /* Maximum width for the container */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: white; /* Background color for the container */
+  border: 1px solid #ddd; /* Border for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  text-align: center; /* Center align text */
+}
+
+/* Book Title Styling */
+.book-title {
+  font-size: 28px; /* Font size for the title */
+  margin-bottom: 20px; /* Margin below the title */
+  color: #333; /* Title color */
+}
+
+/* Book Image Styling */
+.book-image {
+  width: 200px; /* Width for the book image */
+  height: 300px; /* Height for the book image */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Margin below the image */
+  border-radius: 4px; /* Rounded corners for the image */
+}
+
+/* Back Button Styling */
+.back-button {
+  background-color: #0066cc; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  padding: 10px 20px; /* Padding for button */
+  font-size: 18px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Back Button Hover State */
+.back-button:hover {
+  background-color: #f5c235; /* Change color on hover */
+}
